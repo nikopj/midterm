@@ -41,22 +41,37 @@ h2{
 	justify-content: center;
 }
 
-aside{
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.wrapper{
+	display:flex;
+	flex-direction:column;
+	font-size: 21px;
+	color:#B43740;
 	font-family:'Permanent Marker', cursive;
-	font-size: 20px;
 	background-image: url(imgs/linedpaper.png);
+	background-size:auto;
 	background-repeat:no-repeat;
 	position:absolute;
 	left:716px;
 	top:0;
 	margin:40px;
-	width:
+	padding-left: 80px;
+	padding-top:130px;
 }
-aside div.wrapper{
-	position:relative;
-	top:140px;
-	left:80px;
+
+ul{
+	list-style-type:disc;
+	color:#B43740;
 }
+ul li{
+	color:#30124F;
+}
+
+
 
 abbr{
 	text-decoration: none;
