@@ -33,7 +33,16 @@ h1{
 	width:416px;
 	height:416px;
 	justify-content: center;
-	text-shadow:1px 1px 0px #FEB086;
+	text-shadow: 0px 40px 0px #D5544F,
+		0px 80px 0px #D5544F,
+		0px 100px 0px #D5544F,
+		0px 160px 0px #D5544F,
+		0px 200px 0px #D5544F,
+		20px 240px 0px #D5544F,
+		0px 280px 0px #D5544F,
+		0px 320px 0px #D5544F,
+		0px 370px 0px #D5544F;
+	/*text-shadow:1px 1px 0px #FEB086; yellow shadow*/
 	/*text-shadow: 0.5px 0.5px 0 #FEB086,
     -0.5px 0.5px 0 #FEB086,
     0.5px -0.5px 0 #FEB086,
