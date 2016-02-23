@@ -22,8 +22,7 @@ header{
 	padding-bottom:100px;
 	display:flex;
 	flex-direction: column;
-	width: fit-content;
-
+	width: 416px;
 }
 h1{
 	display:flex;
@@ -84,17 +83,8 @@ h2{
 .preamle{
 	position:relative;
 }
-/*.preamble h3::before{
-	content: "The Road to Enlightenment";
-	text-transform: uppercase;
-	color:black;
-	width:20px;
-	position:relative;
-	left:19px;
-	top:0px;
-	z-index: -2;
-}*/
-/*.preamble*/ h3{
+
+.preamble h3{
 	font-size: 30px;
 	text-transform: uppercase;
 	padding:40px;
@@ -114,21 +104,21 @@ h2{
 	left:-19px;
 	z-index: -1;
 }
+h3{
+	font-size: 30px;
+	text-transform: uppercase;
+	padding:40px;
+	padding-bottom:90px;
+	color:transparent;
+	left:-400px;
+	}
+
 .select, .archives, .resources{
 	font-size: 20.5px;
 	color:#B43740;
 	text-shadow:none;
 	padding:inherit;
 }
-/*.preamble h3::before{
-	content: "The Road to Enlightenment";
-	text-transform: uppercase;
-	color:black;
-	position:relative;
-	left:390px;
-	top:-20px;
-	z-index: -2;
-}*/
 
 a{
 	text-decoration: none;
@@ -153,7 +143,6 @@ a{
 	padding-right: 80px;
 	padding-bottom: 20px;
 }
-
 ul{
 	list-style-type:disc;
 	color:#B43740;
@@ -162,10 +151,85 @@ ul li{
 	color:#30124F;
 }
 
+.main{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	margin-top:100px;
+}
+.main div:hover{
+	color:black;
+}
+.main div:hover > h3{
+	color: black;
+	text-shadow: 70px 30px 0px black,
+		0 -30px 0px black,
+		0px 80px 0px black;
+}
+.main div{
+	width:33vw;
+	height:33vw;
+	color: transparent;
+	margin:50px;
+	position: relative;
 
+	border-style: solid;
+	border-width: 12.5vw;
+	-moz-border-image: url(imgs/borderblack500.jpg) 200 repeat;
+	-webkit-border-image: url(imgs/borderblack500.jpg) 200 repeat;
+	-o-border-image: url(imgs/borderblack500.jpg) 200 repeat;
+	border-image: url(imgs/borderblack500.jpg) 200 repeat;
+}
 
-abbr{
+/*album covers*/
+.main div.explanation{
+	background-image: url(imgs/30hours.jpg);
+	background-size: cover;
+}
+.main div.participation{
+	background-image: url(imgs/la.jpg);
+	background-size: cover;
+}
+.main div.benefits{
+	background-image: url(imgs/realfriends.png);
+	background-size: cover;
+}
+.main div.requirements{
+	background-image: url(imgs/onlyone.jpg);
+	background-size: cover;
+}
+.main div:hover > :nth-child(2){
+	width:33vw;
+	position: absolute;
+	top:-12vw;
+	left:0;
+	color:yellow;
+}
+.main div:hover > :nth-child(3){
+	width:33vw;
+	position: absolute;
+	top:15vw;
+	left:23vw;
+	color:yellow;
+	-ms-transform:rotate(90deg); /* IE 9 */
+  -moz-transform:rotate(90deg); /* Firefox */
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  -o-transform:rotate(90deg); /* Opera */
+}
+
+.main footer{
+	width:50vw;
+}
+h2 abbr{
+	margin:0 10px 0 10px;
+}
+abbr[title]{
 	text-decoration: none;
+	border-bottom: none;
+	cursor:default;
 }
 
 
