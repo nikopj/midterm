@@ -13,108 +13,172 @@ body{
 .intro{
 	display:flex;
 	flex-direction:column;
+	justify-content: center;
+	background-color: #FF843E;
+
 }
 
 header{
-	background-image:url(imgs/borderblack.jpg);
-	padding:130px;
-	margin: 40px;
-	padding-bottom:100px;
-	display:flex;
-	flex-direction: column;
-	width: 416px;
+	align-self: center;
+	display:block;
+	position: relative;
 }
+
 h1{
-	display:flex;
-	color:#D5544F;
-	font-size: 40px;
-	background-image: url(imgs/praisesquare.jpeg);
-	width:416px;
-	height:416px;
-	justify-content: center;
-	text-shadow: 0px 40px 0px #D5544F,
-		0px 80px 0px #D5544F,
-		0px 100px 0px #D5544F,
-		0px 160px 0px #D5544F,
-		0px 200px 0px #D5544F,
-		20px 240px 0px #D5544F,
-		0px 280px 0px #D5544F,
-		0px 320px 0px #D5544F,
-		0px 370px 0px #D5544F;
-	/*text-shadow:1px 1px 0px #FEB086; yellow shadow*/
-	/*text-shadow: 0.5px 0.5px 0 #FEB086,
-    -0.5px 0.5px 0 #FEB086,
-    0.5px -0.5px 0 #FEB086,
-    -0.5px -0.5px 0 #FEB086,
-    0px 0.5px 0 #FEB086,
-    0px -0.5px 0 #FEB086,
-    -0.5px 0px 0 #FEB086,
-    0.5px 0px 0 #FEB086,
-    1px 1px 0 #FEB086,
-    -1px 1px 0 #FEB086,
-    1px -1px 0 #FEB086,
-    -1px -1px 0 #FEB086,
-    0px 1px 0 #FEB086,
-    0px -1px 0 #FEB086,
-    -1px 0px 0 #FEB086,
-    1px 0px 0 #FEB086,
-    0.5px 1px 0 #FEB086,
-    -0.5px 1px 0 #FEB086,
-    0.5px -1px 0 #FEB086,
-    -0.5px -1px 0 #FEB086,
-    1px 0.5px 0 #FEB086,
-    -1px 0.5px 0 #FEB086,
-    1px -0.5px 0 #FEB086,
-    -1px -0.5px 0 #FEB086;*/
+	width:100%;
+	color: black; /*#D5544F*/
+	font-size: 100px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	padding:10px;
+	padding-bottom:200px;
+	text-shadow: 100px 100px black, /*Center*/
+		0px 200px black,
+		0px 300px black,
+		0px 400px black,
+		0px 600px black;
 }
-h1:hover{
-	background-image: url(imgs/praiseupsquarecopy.jpg);
+h1::after{
+	content: "";
+	background-image: url(imgs/oldinternet.png);
+	background-size:cover;
+	display: block;
+	padding:0;
+	position:relative;
+	top:90px;
+	left:-30px;
+	width:533px;
+	height:400px;
 }
 
 h2{
-	display:flex;
-	color:#FEB086;
-	font-size: 30px;
-	font-family: Lucida Blackletter;
-	width:100%;
-	justify-content: center;
-}
-
-.preamle{
 	position:relative;
-}
-
-.preamble h3{
-	font-size: 30px;
+	font-size: 40px;
 	text-transform: uppercase;
+	top:0;
+	left:-120px;
+	padding-bottom:40px;
+	text-shadow: 0 40px black,
+		0 80px black,
+		0 120px black,
+		0 160px black,
+		0 200px black,
+		0 240px black,
+		0 280px black,
+		0 320px black,
+		0 360px black,
+		0 400px black,
+		0 440px black,
+		700px 0px black,
+		700px 40px black,
+		700px 80px black,
+		700px 120px black,
+		700px 160px black,
+		700px 200px black,
+		700px 240px black,
+		700px 280px black,
+		700px 320px black,
+		700px 360px black,
+		700px 400px black,
+		700px 440px black;
+}
+h2::after{
+	content: "";
+	background-image: url(imgs/zen.jpg);
+	background-size:cover;
+	display: block;
+	padding:0;
+	position:relative;
+	left: 640px;
+	width:317px;
+	height:413px;
+}
+.summary:hover{
+	color:#3E2948;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.summary{
+	position:absolute;
+	display:block;
+	color:transparent;
+	z-index: 1;
+	font-size: 25px;
+	width:280px;
+	height:380px;
+	top:785px;
+	left:50.5%;
+	letter-spacing: 5px
+}
+.summary p{
+	margin: 10px;
+}
+.preamble{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width:100%;
+}
+.preamble h3{
+	background-image: url(imgs/praiseup-hands.jpg);
+	background-size: 100vw;
+	background-repeat: no-repeat;
+	width:100%;
+	align-self: center;
 	padding:40px;
-	padding-bottom:90px;
-	color:black;
+	justify-content: center;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: normal;
+	margin-left: 80px;
+	margin-bottom: 5px;
+	padding-bottom:120px;
+	color:rgba(255,255,255,0.4);
 	left:-400px;
-	text-shadow: 70px 30px 0px black,
-		0 -30px 0px black,
-		0px 80px 0px black;
+	text-shadow: 70px 40px 0px rgba(255,255,255,0.4),
+		0 -40px 0px rgba(255,255,255,0.4),
+		0px 120px 0px rgba(255,255,255,0.4);
 }
 .preamble h3::after{
 	content: "The Road to Enlightenment";
 	text-transform: uppercase;
-	color:black;
+	color:rgba(255,255,255,0.4);
 	width:20px;
 	position:relative;
-	left:-19px;
-	z-index: -1;
+	left:-23px;
+}
+.preamble p{
+	background-color: #1C1C1C;
+	background-size: cover;
+	height:63px;
+	color:rgba(255,255,255,0.3);
+	font-size:25px;
+	margin-bottom: 5px;
+	align-self: center;
+	justify-content: center;
+	padding: 30px;
+	word-wrap: break-word;
+}
+.preamble > p:nth-child(2){
+	width:70vw;
+}
+.preamble > p:nth-child(3){
+	width:80vw;
+}
+.preamble > p:nth-child(4){
+	width:90vw;
 }
 h3{
-	font-size: 30px;
+	font-size: 3.5vw;
 	text-transform: uppercase;
-	padding:40px;
-	padding-bottom:90px;
-	color:transparent;
-	left:-400px;
+	letter-spacing: 2vw;
+	color: rgba(255,255,255,0.6);
+	width:25vw;
+	word-wrap: break-word;
 	}
 
-.select, .archives, .resources{
+.select, .archives, .zen-resources h3{
 	font-size: 20.5px;
+	letter-spacing: normal;
 	color:#B43740;
 	text-shadow:none;
 	padding:inherit;
@@ -124,7 +188,14 @@ a{
 	text-decoration: none;
 	color: inherit;
 }
-
+.sidebar{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	background-color: #1C1C1C;
+}
 .wrapper{
 	display:flex;
 	flex-direction:column;
@@ -132,20 +203,23 @@ a{
 	color:#B43740;
 	font-family:'Permanent Marker', cursive;
 	background-image: url(imgs/linedpaper.png);
-	background-size:auto;
+	background-size:cover;
 	background-repeat:no-repeat;
-	position:absolute;
-	left:716px;
-	top:0;
-	margin:40px;
-	padding-left: 80px;
+	padding-left: 135px;
 	padding-top:130px;
 	padding-right: 80px;
 	padding-bottom: 20px;
+	width:100%;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	background-color: #1C1C1C;
 }
 ul{
 	list-style-type:disc;
 	color:#B43740;
+	margin: 30px;
 }
 ul li{
 	color:#30124F;
@@ -155,35 +229,39 @@ ul li{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	align-content: center;
 	align-items: center;
-	margin-top:100px;
+	background-color: #1C1C1C;
+	margin-top: 5px;
+	padding:30px;
 }
-.main div:hover{
-	color:black;
-}
-.main div:hover > h3{
-	color: black;
-	text-shadow: 70px 30px 0px black,
-		0 -30px 0px black,
-		0px 80px 0px black;
+.main h3{
+	width: 25vw;
+	height:25vw;
 }
 .main div{
-	width:33vw;
-	height:33vw;
+	width:25vw;
+	height:25vw;
 	color: transparent;
-	margin:50px;
+	margin:20px;
 	position: relative;
-
 	border-style: solid;
-	border-width: 12.5vw;
+	border-width: 10vw;
 	-moz-border-image: url(imgs/borderblack500.jpg) 200 repeat;
 	-webkit-border-image: url(imgs/borderblack500.jpg) 200 repeat;
 	-o-border-image: url(imgs/borderblack500.jpg) 200 repeat;
 	border-image: url(imgs/borderblack500.jpg) 200 repeat;
 }
-
+.main div:hover > p{
+	color: rgba(255,255,255,0.3);
+	position: relative;
+	top:-25vw;
+	font-size: 0.8vw;
+}
+.main div:hover > h3{
+	color: transparent;
+}
 /*album covers*/
 .main div.explanation{
 	background-image: url(imgs/30hours.jpg);
@@ -201,26 +279,11 @@ ul li{
 	background-image: url(imgs/onlyone.jpg);
 	background-size: cover;
 }
-.main div:hover > :nth-child(2){
-	width:33vw;
-	position: absolute;
-	top:-12vw;
-	left:0;
-	color:yellow;
-}
-.main div:hover > :nth-child(3){
-	width:33vw;
-	position: absolute;
-	top:15vw;
-	left:23vw;
-	color:yellow;
-	-ms-transform:rotate(90deg); /* IE 9 */
-  -moz-transform:rotate(90deg); /* Firefox */
-  -webkit-transform:rotate(90deg); /* Safari and Chrome */
-  -o-transform:rotate(90deg); /* Opera */
-}
 
 .main footer{
+	letter-spacing: 30px;
+	align-self: center;
+	color:rgba(255,255,255,0.2);
 	width:50vw;
 }
 h2 abbr{
@@ -231,12 +294,252 @@ abbr[title]{
 	border-bottom: none;
 	cursor:default;
 }
+/*small window desktop*/
+@media all and (min-width:400px) and (max-width:1400px) {
+h1{
+	font-size: 70px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	padding:10px;
+	padding-bottom:140px;
+	text-shadow: 70px 70px black,
+		0px 140px black,
+		0px 210px black,
+		0px 280px black,
+		0px 420px black;
+}
+h1::after{
+	top:60px;
+	left:-20px;
+	width:373px;
+	height:280px;
+}
+h2{
+	font-size: 28px;
+	left:-84px;
+	padding-bottom:40px;
+	text-shadow: 0 40px black,
+		0 80px black,
+		0 120px black,
+		0 160px black,
+		0 200px black,
+		0 240px black,
+		0 280px black,
+		0 320px black,
+		490px 0px black,
+		490px 40px black,
+		490px 80px black,
+		490px 120px black,
+		490px 160px black,
+		490px 200px black,
+		490px 240px black,
+		490px 280px black,
+		490px 320px black;
+}
+h2::after{
+	left: 448px;
+	width:222px;
+	height:289px;
+}
+.summary{
+	position:absolute;
+	display:block;
+	color:transparent;
+	z-index: 1;
+	font-size: 17px;
+	width:196px;
+	height:266px;
+	top:550px;
+	left:50%;
+	letter-spacing: 3.5px
+}
+.summary p{
+	margin: 7px;
+}
+.main div{
+	height: 40vw;
+	width: 40vw;
+	border-width: 12.5vw;
+}
+h3{
+	width:40vw;
+	font-size: 5vw;
+}
+.preamble h3{
+	font-size: 30px;
+	padding:30px;
+	padding-bottom: 90px;
+	text-shadow: 70px 30px 0px rgba(255,255,255,0.4),
+		0 -30px 0px rgba(255,255,255,0.4),
+		0px 90px 0px rgba(255,255,255,0.4);
+}
+.preamble p{
+	font-size: 20px;
+}
+.main div:hover > p{
+	font-size: 1vw;
+}
+	}
+/* for enlightenment text */
+@media all and (min-width:400px) and (max-width:960px) {
+.preamble h3{
+	font-size: 25px;
+}
 
-
+}
+/* xs desktop */
+@media all and (min-width:550px) and (max-width:800px) {
+h1{
+	font-size: 50px;
+	letter-spacing: 5.7px;
+	text-transform: uppercase;
+	padding:10px;
+	padding-bottom:100px;
+	text-shadow: 50px 50px black,
+		0px 100px black,
+		0px 150px black,
+		0px 200px black,
+		0px 300px black;
+}
+h1::after{
+	top:43px;
+	left:-14px;
+	width:266px;
+	height:200px;
+}
+h2{
+	font-size: 20px;
+	left:-60px;
+	padding-bottom:29px;
+	text-shadow: 0 20px black,
+		0 40px black,
+		0 60px black,
+		0 80px black,
+		0 100px black,
+		0 120px black,
+		0 140px black,
+		0 160px black,
+		350px 0px black,
+		350px 20px black,
+			350px 40px black,
+			350px 60px black,
+			350px 80px black,
+			350px 100px black,
+			350px 120px black,
+			350px 140px black,
+			350px 160px black;
+}
+h2::after{
+	left: 320px;
+	width:159px;
+	height:206px;
+}
+.summary{
+	position:absolute;
+	display:block;
+	color:transparent;
+	z-index: 1;
+	font-size: 12px;
+	width:140px;
+	height:190px;
+	top:395px;
+	left:50%;
+	letter-spacing: 2.3px
+}
+.summary p{
+	margin: 7px;
+}
+.main div{
+	height: 40vw;
+	width: 40vw;
+	border-width: 12.5vw;
+}
+.preamble h3{
+	font-size: 20px;
+	padding:20px;
+	padding-bottom: 90px;
+	text-shadow: 47px 20px 0px rgba(255,255,255,0.4),
+		0 -20px 0px rgba(255,255,255,0.4),
+		0px 60px 0px rgba(255,255,255,0.4);
+}
+.preamble p{
+	font-size: 15px;
+}
+.main div:hover > p{
+	font-size: 1.2vw;
+}
+}
 /* override css for mobile browsers */
-@media all and (min-width:320px) and (max-width:400px) {
-	body {
-		font-size:1em;
-		background-color:orange;
+@media all and (min-width:320px) and (max-width:550px) {
+	h1{
+		font-size: 30px;
+		letter-spacing: 3.42px;
+		text-transform: uppercase;
+		padding:6px;
+		padding-bottom:60px;
+		text-shadow: 30px 30px black,
+			0px 60px black,
+			0px 90px black,
+			0px 120px black,
+			0px 180px black;
+	}
+	h1::after{
+		top:29px;
+		left:-8.4px;
+		width:160px;
+		height:120px;
+	}
+	h2{
+		font-size: 12px;
+		left:-36px;
+		padding-bottom:35px;
+		text-shadow: 0 20px black,
+			0 40px black,
+			0 60px black,
+			0 80px black,
+			0 100px black,
+			0 120px black,
+			0 140px black,
+			0 160px black,
+			210px 0px black,
+			210px 20px black,
+				210px 40px black,
+				210px 60px black,
+				210px 80px black,
+				210px 100px black,
+				210px 120px black,
+				210px 140px black,
+				210px 160px black;
+	}
+	h2::after{
+		left: 138px;
+		width:95px;
+		height:123px;
+	}
+	.preamble h3{
+		font-size: 10px;
+		padding:10px;
+		padding-bottom: 90px;
+		text-shadow: 23px 10px 0px rgba(255,255,255,0.4),
+			0 -10px 0px rgba(255,255,255,0.4),
+			0px 30px 0px rgba(255,255,255,0.4);
+	}
+	.summary{
+		position:absolute;
+		display:block;
+		color:transparent;
+		z-index: 1;
+		font-size: 7.2px;
+		width:84px;
+		height:114px;
+		top:237px;
+		left:50%;
+		letter-spacing: 1.38px
+	}
+	.summary p{
+		margin: 4.2px;
+	}
+	.preamble p{
+		font-size: 10px;
 	}
 }
